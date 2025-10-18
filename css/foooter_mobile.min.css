@@ -148,7 +148,9 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 999999;
+    background-color: white;
+    box-shadow: 0px -5px 5px gray;
 }
 
 .footer__mobile-position-div {
@@ -174,7 +176,6 @@
     animation: shake-rotate-updown 0.6s infinite;
     transform-origin: center center;
 }
-
 
 @keyframes shake-rotate-updown {
     0% {
