@@ -308,8 +308,13 @@ $local = 'https://nk.phongkhamandonghcm.com';
         </a>
     </footer>
     <div class="footer_fixed">
-        <img style="width: 100%; height: auto;" loading="lazy"
-            src="<?php echo $local ?>/images/chuyen_de/users/footer_mobile.gif" alt="...">
+        <div style="position: relative;">
+            <img style="position: absolute; top: 3px; right: 40%;" loading="lazy" width="50px" height="auto"
+                src="<?php echo $local ?>/images/icons/icon_footer_animation.gif" alt="..." layout="responsive">
+            </img>
+            <img style="width: 100%; height: auto;" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/users/footer_mobile.gif" alt="...">
+        </div>
     </div>
     <?php include_once 'layout/modalKhuyenMai.php' ?>
     <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
