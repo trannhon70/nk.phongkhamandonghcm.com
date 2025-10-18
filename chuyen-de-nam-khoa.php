@@ -3,8 +3,8 @@ ob_start("ob_gzhandler");
 header("Timing-Allow-Origin: *");
 header("Cache-Control: public, max-age=31536000, must-revalidate");
 
-$local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
-// $local = 'https://nk.phongkhamandonghcm.com';
+// $local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
+$local = 'https://nk.phongkhamandonghcm.com';
 ?>
 <!DOCTYPE html>
 <html ⚡ lang="en">
@@ -22,26 +22,26 @@ $local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
     <noscript>
         <link rel="stylesheet" href="css/chuyen-de-nam-khoa.min.css">
     </noscript>
-    <!-- <script>
-    document.addEventListener('scroll', function loadGA() {
-        console.log('Người dùng cuộn xuống - Tải Google Analytics');
-        var g = document.createElement('script'),
-            s = document.scripts[0];
-        g.src = 'https://www.googletagmanager.com/gtag/js?id=G-XWJ4VGC40M';
-        g.async = true;
-        s.parentNode.insertBefore(g, s);
-        g.onload = function() {
-            window.dataLayer = window.dataLayer || [];
+    <script>
+        document.addEventListener('scroll', function loadGA() {
+            console.log('Người dùng cuộn xuống - Tải Google Analytics');
+            var g = document.createElement('script'),
+                s = document.scripts[0];
+            g.src = 'https://www.googletagmanager.com/gtag/js?id=G-M8KPG8P2YN';
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
+            g.onload = function() {
+                window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-XWJ4VGC40M');
-        };
-        document.removeEventListener('scroll', loadGA);
-    });
-    </script> -->
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-M8KPG8P2YN');
+            };
+            document.removeEventListener('scroll', loadGA);
+        });
+    </script>
 </head>
 <?php
 $slides = [

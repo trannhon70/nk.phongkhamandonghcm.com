@@ -221,7 +221,7 @@ $local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
             // Tạo thẻ script
             var g = document.createElement('script'),
                 s = document.scripts[0];
-            g.src = 'https://www.googletagmanager.com/gtag/js?id=G-68K71TYX1K';
+            g.src = 'https://www.googletagmanager.com/gtag/js?id=G-M8KPG8P2YN';
             g.async = true;
             s.parentNode.insertBefore(g, s);
 
@@ -233,7 +233,7 @@ $local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
                     dataLayer.push(arguments);
                 }
                 gtag('js', new Date());
-                gtag('config', 'G-68K71TYX1K');
+                gtag('config', 'G-M8KPG8P2YN');
             };
 
             // Xóa sự kiện lắng nghe để không tải lại
