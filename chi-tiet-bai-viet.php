@@ -186,11 +186,7 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                     pElements[i].style.fontSize = '13px';
                     pElements[i].style.lineHeight = '27px';
                 }
-
-
             }
-
-
 
             let imgElements = baiVietElement.getElementsByTagName('img');
             if (imgElements) {
@@ -317,6 +313,7 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                 if (entry.isIntersecting) {
                     loadBody();
                     applyCSSandJS()
+                    checkImgMobile()
                 }
             });
         });
