@@ -1,174 +1,318 @@
-<?php include "inc/header.php" ?>
-<link rel="stylesheet" href="<?php echo $local ?>/css/trang-chu.min.css">
+<?php
+ob_start("ob_gzhandler");
+header("Timing-Allow-Origin: *");
+header("Cache-Control: public, max-age=31536000, must-revalidate");
+
+$local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
+// $local = 'https://nk.phongkhamandonghcm.com';
+?>
+<!DOCTYPE html>
+<html ⚡ lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Phòng khám chuyên khoa chuyên điều trị bệnh nam khoa, bệnh xã hội, da liễu, hậu môn - trực tràng uy tính tại thành phố Hồ Chí Minh">
+    <title>Phòng khám chuyên khoa</title>
+    <link rel="icon" href="<?php echo $local ?>/images/nam_khoa/icons/icon_logo.webp" type="image/x-icon">
+    <link rel="preload" href="css/chuyen-de-cat-bao-quy-dau.min.css" as="style"
+        onload='this.onload=null,this.rel="stylesheet"'>
+    <noscript>
+        <link rel="stylesheet" href="css/chuyen-de-cat-bao-quy-dau.min.css">
+    </noscript>
+    <!-- <script>
+    document.addEventListener('scroll', function loadGA() {
+        console.log('Người dùng cuộn xuống - Tải Google Analytics');
+        var g = document.createElement('script'),
+            s = document.scripts[0];
+        g.src = 'https://www.googletagmanager.com/gtag/js?id=G-XWJ4VGC40M';
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function() {
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-XWJ4VGC40M');
+        };
+        document.removeEventListener('scroll', loadGA);
+    });
+    </script> -->
 </head>
 
+
 <body>
-    <?php include_once 'layout/headerLayout.php' ?>
-     <main>
-        <article>
-            <?php include "layout/sliderLayout.php" ?>
-            
-             <div class="checkSendPhoneMobile"  style="margin-top: 170px;" ></div>
-            <section id="menu_logo_mobile" >
-                <?php include 'layout/menu_logo.php' ?> 
-            </section>
-            
 
-          <section class="motto" id="motto">
-                <div class="motto__container">
-                    <div class="motto__container-left">
-                        <div class="motto__container-left-top">
-                            <div class="motto__container-left-top-img">
-                                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_pen.webp" height="60px" width="50px" alt="..."></amp-img>
-                            </div>
-                            <div class="motto__container-left-top-title">
-                                PHƯƠNG CHÂM CỦA CHÚNG TÔI
-                            </div>
-                        </div>
-                        <div class="motto__container-left-boddy" >
-                        <div class="motto__container-left-text">
-                          
-                            Phòng khám Chuyên khoa An Đông là cơ sở y tế uy tín tại TP.HCM. Cung cấp dịch vụ y tế chất lượng và tận tâm. Phòng khám với nhiều chuyên khoa, với đội ngũ y bác sĩ giàu kinh nghiệm, luôn sẵn sàng chăm sóc và hỗ trợ điều trị cho người bệnh.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="motto__container-right">
-                        <img class="motto__container-right-img" src="<?php echo $local ?>/images/users/phuong_cham.webp" alt="...">
-                        <img width="100%" class="motto__container-right-img-mobile"  src="<?php echo $local ?>/images/users/khong_gian1.webp" alt="...">
-                    </div>
+    <header style="margin: 0 auto;">
+        <div class="header">
+            <img width="30" height="30" loading="lang" src="<?php echo $local ?>/images/chuyen_de/icons/icon_menu.webp"
+                alt="...">
+            <div class="header_center">Chuyên khoa <strong>An Đông</strong></div>
+            <img width="30" height="30" loading="lazy" src="<?php echo $local ?>/images/chuyen_de/icons/icon_dot.webp"
+                alt="...">
+        </div>
+    </header>
+    <main>
+        <section style="margin-top: 50px;">
+            <a aria-label="liên hệ" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                <img style="width: 100%; height: auto;" loading="lazy"
+                    src="<?php echo $local ?>/images/chuyen_de/users/banner.webp" alt="...">
+            </a>
+            <div>
+                <img style="width: 100%; height: auto;" loading="lazy"
+                    src="<?php echo $local ?>/images/chuyen_de/users/ban_co_biet_1.webp" alt="...">
+            </div>
+        </section>
+        <section class="section__button">
+            <a aria-label="liên hệ" class="animated-button"
+                href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Đặt lịch khám ngay</a>
+        </section>
+        <section class="title_h2">
+            <h2>Trường hợp cần cắt bao quy đầu <span></span></h2>
+
+        </section>
+        <section style="margin-top: 10px;">
+            <div class="glans">
+                <div class="glans_left">
+                    <img style="width: 30px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/quy_dau_1.webp" alt="...">
                 </div>
-            </section>
-
-             <section class="advantage" id="advantage">
-                <div class="advantage__container">
-                    <div class="advantage__container-left">
-                        <img class="advantage__container-left-img" src="<?php echo $local ?>/images/users/u_the.webp" alt="...">
-                    </div>
-                    <div class="advantage__container-right">
-                        <div class="advantage__container-right-top">
-                            <div class="advantage__container-right-top-img">
-                                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_check.webp" height="60px" width="60px" alt="..."></amp-img>
-                            </div>
-                            <div class="advantage__container-right-top-title">
-                                ƯU THẾ VƯỢT TRỘI
-                            </div>
-                        </div>
-                        <div class="advantage__container-right-bottom">
-                            <div class="advantage__container-right-bottom-item">
-                                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_check1.webp" height="25px" width="25px" alt="..."></amp-img>
-                                <h5>Đội ngũ bác sĩ chuyên môn cao</h5>
-                            </div>
-                            <div class="advantage__container-right-bottom-item">
-                                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_check1.webp" height="25px" width="25px" alt="..."></amp-img>
-                                <h5>môi trường thân thiện, dịch vụ tận tâm, chu đáo</h5>
-                            </div>
-                            <div class="advantage__container-right-bottom-item">
-                                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_check1.webp" height="25px" width="25px" alt="..."></amp-img>
-                                <h5>hệ thống máy móc hiện đại</h5>
-                            </div>
-                            <div class="advantage__container-right-bottom-item">
-                                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_check1.webp" height="25px" width="25px" alt="..."></amp-img>
-                                <h5>chi phí khám hỗ trợ điều trị bệnh hợp lý</h5>
-                            </div>
-                            <div class="advantage__container-right-bottom-item">
-                                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_check1.webp" height="25px" width="25px" alt="..."></amp-img>
-                                <h5>thủ tục nhanh gọn, không rườm rà</h5>
-                            </div>
-                            <div class="advantage__container-right-bottom-item">
-                                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_check1.webp" height="25px" width="25px" alt="..."></amp-img>
-                                <h5>môi trường thân thiện</h5>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="glans_right">
+                    <div class="glans_right_title">dài bao quy đầu</div>
+                    <div class="glans_right_text">Bao trùm toàn bộ khó vệ sinh</div>
                 </div>
-            </section>
-
-           <?php include_once 'layout/benefitLayout.php' ?>
-
-            <section class="space" id="space">
-                <div class="space__title">
-                    <div>KHÔNG GIAN PHÒNG KHÁM</div>
+            </div>
+            <div class="glans">
+                <div class="glans_left">
+                    <img style="width: 30px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/quy_dau_2.webp" alt="...">
                 </div>
-                <div class="space__container">
-                    <div class="space__container-left">
-                        <img src="<?php echo $local ?>/images/users/khong_gian1.webp" alt="...">
-                    </div>
-
-                    <div class="space__container-right">
-                        <div class="space__container-right-img space__container-right-img-mobile">
-                            <img src="<?php echo $local ?>/images/users/khong_gian2.webp" alt="...">
-                        </div>
-                        <div class="space__container-right-img">
-                            <img src="<?php echo $local ?>/images/users/khong_gian3.webp" alt="...">
-                        </div>
-                        <div class="space__container-right-img">
-                            <img src="<?php echo $local ?>/images/users/khong_gian4.webp" alt="...">
-                        </div>
-                        <div class="space__container-right-img">
-                            <img src="<?php echo $local ?>/images/users/khong_gian5.webp" alt="...">
-                        </div>
-                        <div class="space__container-right-img">
-                            <img src="<?php echo $local ?>/images/users/khong_gian6.webp" alt="...">
-                        </div>
-                        <div class="space__container-right-img space__container-right-img-mobile">
-                            <img src="<?php echo $local ?>/images/users/khong_gian7.webp" alt="...">
-                        </div>
-                        <div class="space__container-right-img space__container-right-img-mobile">
-                            <img src="<?php echo $local ?>/images/users/khong_gian8.webp" alt="...">
-                        </div>
-                        <div class="space__container-right-img space__container-right-img-mobile">
-                            <img src="<?php echo $local ?>/images/users/khong_gian9.webp" alt="...">
-                        </div>
-                    </div>
+                <div class="glans_right">
+                    <div class="glans_right_title">hẹp quy đầu</div>
+                    <div class="glans_right_text">Gây khó tiểu, dễ viêm nhiễm</div>
                 </div>
-            </section>
-
-             <section class="client" id="client">
-                <div class="client__container">
-                    <div class="client__container-title">KHÁCH HÀNG NÓI GÌ?</div>
-                    <div class="client__container-list">
-                        <div class="client__container-item ">
-                            <amp-img class="client__container-item-img" src="<?php echo $local ?>/images/users/user_kimOanh.webp" height="100px" width="100px" alt="..."></amp-img>
-                            <div class="client__container-item-name">CHỊ KIM OANH</div>
-                            <div class="client__container-item-div">
-                                <hr>
-                            </div>
-                            <div class="client__container-item-text">
-                                 “Tôi rất hài lòng với dịch vụ tại phòng khám. Các bác sĩ rất tận tình, giải thích rõ ràng về bệnh tình và phương pháp điều trị. Không gian khám bệnh sạch sẽ, thoải mái, giúp tôi cảm thấy yên tâm hơn.”
-                            </div>
-                        </div>
-                        <div class="client__container-item activeClient">
-                            <amp-img class="client__container-item-img" src="<?php echo $local ?>/images/users/user_trunghieu.webp" height="100px" width="100px" alt="..."></amp-img>
-                            <div class="client__container-item-name">ANH TRUNG HIẾU</div>
-                            <div class="client__container-item-div">
-                                <hr>
-                            </div>
-                            <div class="client__container-item-text">
-                                  “Tuần trước mình có đến đây cắt bao quy đầu. Các bác sĩ tư vấn rất nhiệt tình, có tâm, tay nghề giỏi, làm rất êm và kỹ lưỡng, mình thấy giá cũng hợp lý. Bên đây cũng có khám sức khỏe định kỳ nữa nên tháng sau mình sẽ đưa gia đình đến khám.”
-                            </div>
-                        </div>
-                        <div class="client__container-item ">
-                            <amp-img class="client__container-item-img" src="<?php echo $local ?>/images/users/user_minhHai.webp" height="100px" width="100px" alt="..."></amp-img>
-                            <div class="client__container-item-name">ANH ĐỨC TÀI</div>
-                            <div class="client__container-item-div">
-                                <hr>
-                            </div>
-                            <div class="client__container-item-text">
-                                “Mình được bạn bè giới thiệu đến Chuyên khoa An Đông. Tại đây, các bác sĩ vô cùng có tâm với nghề, nên mình cũng thoải mái chia sẻ những vấn đề mình đang gặp phải. Sau điều trị, mình cảm thấy sức khỏe cải thiện hơn”
-                            </div>
-                        </div>
-                    </div>
-                    <div class="index-client">
-                        <div class="client-item client-item-0 activeClient"></div>
-                        <div class="client-item client-item-1"></div>
-                        <div class="client-item client-item-2"></div>
-                    </div>
+            </div>
+            <div class="glans">
+                <div class="glans_left">
+                    <img style="width: 30px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/quy_dau_3.webp" alt="...">
                 </div>
-            </section>
+                <div class="glans_right">
+                    <div class="glans_right_title">nghẹt bao quy đầu</div>
+                    <div class="glans_right_text">Nguy cơ hoại tử, cần xử lý ngay</div>
+                </div>
+            </div>
+            <div class="glans">
+                <div class="glans_left">
+                    <img style="width: 30px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/quy_dau_4.webp" alt="...">
+                </div>
+                <div class="glans_right">
+                    <div class="glans_right_title">viêm nhiễm tái phát</div>
+                    <div class="glans_right_text">Xuất tinh sớm, ảnh hưởng sinh lý</div>
+                </div>
+            </div>
+        </section>
+        <section style="margin-top: 10px;">
+            <img style="width: 100%; height: auto;" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/users/ban_co_biet_2.webp" alt="...">
+        </section>
+        <section class="title_h2">
+            <h2>các phương pháp cắt bao quy đầu <span></span></h2>
+        </section>
+        <section class="method">
+            <div class="method_card">
+                <div class="method_card_absolute">
+                    <img style="width: 50px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/icon_keo.webp" alt="...">
+                </div>
+                <div class="method_card_title">truyền thống</div>
+                <div class="method_card_text">Chi phí thấp, nhưng gây đau, lâu hồi phục.</div>
+            </div>
+            <div class="method_card">
+                <div style="background-color: #00baff;" class="method_card_absolute">
+                    <img style="width: 50px; height: 40px;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/icon_laser.webp" alt="...">
+                </div>
+                <div class="method_card_title">bằng laser</div>
+                <div class="method_card_text">ít chảy máu, thẩm mỹ, lành nhanh hơn.</div>
+            </div>
+        </section>
+        <section class="title_h2">
+            <h2>cắt bao quy đầu bao nhiêu tiền? <span></span></h2>
+        </section>
+        <section class="expense">
+            <div class="expense_title">
+                Chi phí cắt bao quy phụ thuộc vào?
+            </div>
+            <div class="expense_body">
+                <div class="expense_body_title">
+                    <strong>Tình trạng bao quy đầu: </strong>Dài hẹp, hay tình trạng viêm nhiễm
+                </div>
+                <div style="margin-top: 10px;" class="expense_body_title">
+                    <strong>Phương pháp lựa chọn: </strong>Truyền thống, laser, xâm lấn tối thiểu
+                </div>
+                <div style="margin-top: 10px;" class="expense_body_title">
+                    <strong>Cơ sở thực hiện: </strong>Uy tín, bác sĩ chuyên khoa, trang thiết bị hiện đại
+                </div>
+            </div>
+        </section>
+        <a aria-label="liên hệ" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+            style="margin-top: 10px; display: block;">
+            <img style="width: 100%; height: auto;" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/users/banner_1.webp" alt="...">
+        </a>
+        <section class="title_h2">
+            <h2>trường hợp cần cắt bao quy đầu <span></span></h2>
+        </section>
+        <section>
+            <div class="expense_body">
+                <div class="expense_body_title">
+                    Cắt bao quy đầu ở độ tuổi nào là tốt nhất? <br />
+                    Đây là câu hỏi nhiều phụ huynh và nam giới quan tâm!
+                </div>
 
+            </div>
+        </section>
+        <section style="margin-top: 10px;">
+            <div class="glans">
+                <div class="glans_left">
+                    <img style="width: 50px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/icon_user_1.webp" alt="...">
+                </div>
+                <div class="glans_right">
+                    <div style="text-transform: none;" class="glans_right_title">Trẻ em từ 7 đến 12 tuổi</div>
+                    <div class="glans_right_text">Khi bao quy chưa tự tuột xuống</div>
+                </div>
+            </div>
+            <div class="glans">
+                <div style="background-color: #00bbff;" class="glans_left">
+                    <img style="width: 50px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/icon_user_2.webp" alt="...">
+                </div>
+                <div class="glans_right">
+                    <div style="text-transform: none;" class="glans_right_title">Thanh thiếu niên 13 đến 18 tuổi</div>
+                    <div class="glans_right_text">Tránh viêm, ảnh hưởng tuổi dậy thì</div>
+                </div>
+            </div>
+            <div class="glans">
+                <div style="background-color: #f7a43a;" class="glans_left">
+                    <img style="width: 50px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/icon_user_3.webp" alt="...">
+                </div>
+                <div class="glans_right">
+                    <div style="text-transform: none;" class="glans_right_title">Người trưởng thành</div>
+                    <div class="glans_right_text">Viêm, đau, ảnh hưởng đến quan hệ</div>
+                </div>
+            </div>
+        </section>
+        <section style="margin-top: 10px;">
+            <img style="width: 100%; height: auto;" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/users/ban_co_biet_3.webp" alt="...">
+        </section>
+        <section class="section__button">
+            <a aria-label="liên hệ" class="animated-button"
+                href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Đặt lịch khám ngay</a>
+        </section>
+        <section class="title_h2">
+            <h2>phòng khám cắt bao quy đầu BS võ minh nguyễn <span></span></h2>
+        </section>
+        <section style="margin-top: 10px;">
+            <img style="width: 100%; height: auto;" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/users/ban_co_biet_4.webp" alt="...">
+        </section>
+        <section class="expense">
+            <div class="expense_body">
+                <div class="expense_body_title">
+                    Bác sĩ Võ Minh Nguyễn trực tiếp thăm khám và điều trị
+                </div>
+            </div>
+        </section>
+        <section class="method">
+            <div class="method_card">
+                <div class="method_card_absolute">
+                    <img style="width: 35px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/icon_file.webp" alt="...">
+                </div>
+                <div class="method_card_title">quy trình</div>
+                <div class="method_card_text">Hiện đại, xâm lấn tối thiểu, giảm đau, hạn chế sẹo</div>
+            </div>
+            <div class="method_card">
+                <div style="background-color: #00baff;" class="method_card_absolute">
+                    <img style="width: 35px; height: auto;" loading="lazy"
+                        src="<?php echo $local ?>/images/chuyen_de/icons/icon_time.webp" alt="...">
+                </div>
+                <div class="method_card_title">thời gian</div>
+                <div class="method_card_text">Nhanh chóng, ít chảy máu, phục hồi sớm, thẩm mỹ</div>
+            </div>
+        </section>
+        <section class="note">
+            <div class="note_1">
+                <img style="width: 30px; height: auto;" loading="lazy"
+                    src="<?php echo $local ?>/images/chuyen_de/icons/icon_celendar.webp" alt="...">
+                Thời gian làm việc: <strong>8:00 - 20:00</strong>
+            </div>
+            <div class="note_1">
+                (Cả cuối tuần và lễ)
+            </div>
+            <div class="note_1">
+                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="note_1_button">Đặt lịch
+                    tư vấn 24/7</a>
+            </div>
+            <div class="note_1">
+                <img style="width: 25px; height: auto;" loading="lazy"
+                    src="<?php echo $local ?>/images/chuyen_de/icons/icon_security.webp" alt="...">
+                Thông tin các nhan và hồ sơ bệnh án
+            </div>
+            <div class="note_1">
+                được lưu giữ an toàn, bảo mật.
+            </div>
 
-        </article>
+        </section>
+        <section style="margin-top: 10px;">
+            <img style="width: 100%; height: auto;" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/users/giay_phep.webp" alt="...">
+        </section>
     </main>
-    
-     <?php include_once 'inc/footer.php' ?>
+    <footer class="footer">
+        <div class="footer_title">
+            <img width="60" height="auto" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/icons/icon_logo.webp" alt="...">
+            <div class="footer_title_right">
+                <h5>AN ĐÔNG</h5>
+                <span>PHÒNG KHÁM CHUYÊN KHOA </span>
+            </div>
+        </div>
+        <div class="footer_item">
+            <img width="25" height="auto" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/icons/icon_location.webp" alt="...">
+            Số 360 đường An Dương Vương, Phường Chợ Quán, TP Hồ Chí Minh, Việt Nam
+        </div>
+        <a href="tel:+0968063109" class="footer_item">
+            <img width="20" height="auto" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/icons/icon_phone.webp" alt="...">
+            Hotline: 0968 063 109
+        </a>
+    </footer>
+    <div class="footer_fixed">
+        <img style="width: 100%; height: auto;" loading="lazy"
+            src="<?php echo $local ?>/images/chuyen_de/users/footer_mobile.gif" alt="...">
+    </div>
+    <?php include_once 'layout/modalKhuyenMai.php' ?>
+    <script language="javascript" src="https://npa.zoosnet.net/JS/LsJS.aspx?siteid=NPA46777247&float=1&lng=en"></script>
+</body>
+
+</html>
