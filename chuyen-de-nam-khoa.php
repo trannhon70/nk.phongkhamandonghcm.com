@@ -198,7 +198,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
             <img style="width: 80px; height: auto;" loading="lazy"
                 src="<?php echo $local ?>/images/nam_khoa/icons/step_1.webp" alt="...">
             <div class="namkhoa_card_text">
-                Kiên Quan Hệ từ 24-48h trước khi khám
+                Kiêng Quan Hệ từ 24-48h trước khi khám
             </div>
         </div>
         <div class="namkhoa_card">
