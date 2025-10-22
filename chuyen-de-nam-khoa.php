@@ -66,7 +66,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
             src="<?php echo $local ?>/images/nam_khoa/banner/ban_co_biet.webp" alt="...">
     </section>
     <section class="title_h2">
-        <h2>Trường hợp cần cắt bao quy đầu <span></span></h2>
+        <h2>Lợi ích khi khám nam khoa <span></span></h2>
 
     </section>
     <section style="margin-top: 10px;">
