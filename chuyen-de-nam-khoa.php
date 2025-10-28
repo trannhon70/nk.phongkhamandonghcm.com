@@ -50,7 +50,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
         <div class="header">
             <img width="30" height="30" loading="lang" src="<?php echo $local ?>/images/chuyen_de/icons/icon_menu.webp"
                 alt="...">
-            <div class="header_center">Chuyên khoa <strong>An Đông</strong></div>
+            <div class="header_center">Phòng Khám <strong>Nam Khoa TP. HCM</strong></div>
             <img width="30" height="30" loading="lazy" src="<?php echo $local ?>/images/chuyen_de/icons/icon_dot.webp"
                 alt="...">
         </div>
@@ -240,11 +240,11 @@ $local = 'https://nk.phongkhamandonghcm.com';
 
     <footer class="footer">
         <div class="footer_title">
-            <img width="60" height="auto" loading="lazy"
-                src="<?php echo $local ?>/images/chuyen_de/icons/icon_logo.webp" alt="...">
+            <!-- <img width="60" height="auto" loading="lazy"
+                src="<?php echo $local ?>/images/chuyen_de/icons/icon_logo.webp" alt="..."> -->
             <div class="footer_title_right">
-                <h5>AN ĐÔNG</h5>
-                <span>PHÒNG KHÁM CHUYÊN KHOA </span>
+                <h5>PHÒNG KHÁM</h5>
+                <span>NAM KHOA TP. HCM </span>
             </div>
         </div>
         <div class="footer_item">

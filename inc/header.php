@@ -50,8 +50,8 @@ header("Cache-Control: public, max-age=31536000");
 header("Cache-Control: private, no-cache");
 header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-$local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
-// $local = 'https://nk.phongkhamandonghcm.com';
+// $local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
+$local = 'https://nk.phongkhamandonghcm.com';
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ $local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Phòng khám Chuyên khoa chuyên điều trị bệnh nam khoa, bệnh xã hội, da liễu, hậu môn - trực tràng uy tính tại thành phố Hồ Chí Minh">
-    <title>Phòng khám Chuyên khoa An Đông</title>
+    <title>Phòng khám Phòng Khám Nam Khoa TP. HCM</title>
     <link rel="icon" href="<?php echo $local ?>/images/icons/icon_logo.webp" type="image/x-icon">
     <link rel="preload" href="<?php echo $local ?>/css/index.min.css" as="style"
         onload='this.onload=null,this.rel="stylesheet"'>

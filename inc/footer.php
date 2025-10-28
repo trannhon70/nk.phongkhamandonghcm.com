@@ -88,7 +88,7 @@
     </div>
     <hr>
     <div class="footer__copyRight">
-        <div>Copyright © <?php echo date('Y'); ?> Phòng Khám Chuyên khoa An Đông</div>
+        <div>Copyright © <?php echo date('Y'); ?> Phòng Khám Nam Khoa TP. HCM</div>
     </div>
 
     <!-- Modal footer -->

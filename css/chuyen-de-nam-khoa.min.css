@@ -222,6 +222,7 @@ h2 span {
 .footer_title_right > h5 {
     font-size: 20px;
     font-weight: 700;
+    margin: 10px 0px !important;
 }
 .footer_title_right > span {
     font-size: 18px;

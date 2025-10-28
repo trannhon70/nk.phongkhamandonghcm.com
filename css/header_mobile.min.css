@@ -36,7 +36,7 @@
 
 .header__mobile-banner {
     border-bottom: 1px solid var(--color-104D6D);
-    padding-top: 60px;
+    padding-top: 51px;
 }
 
 @keyframes slideIn {

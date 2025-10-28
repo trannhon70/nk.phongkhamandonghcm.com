@@ -79,23 +79,13 @@ $DSBenh = $benh->getDSBenhThuocKhoaTTYK();
 </header>
 
 <header class="header__mobile" id="header_mobile">
-    <div class="header__mobile-top">
-        <div class="header__mobile-top-body">
-            <img class="header__mobile-img" src="<?php echo $local ?>/images/logos/logo_mobile.webp" alt="">
-
-            <div class="header__mobile-center">
-                <div class="header__mobile-center-title">
-                    Hotline tư vấn: 028 7777 9888
-                </div>
-                <span>360 An Dương Vương, P. Chợ Quán, TP. HCM</span>
-            </div>
-            <div class="header__mobile-icon">
-                <amp-img onclick="showSidebar()" class="header__bottom-icon-img"
-                    src="<?php echo $local ?>/images/icons/icon_menu.webp" height="30px" width="30px" alt="...">
-                </amp-img>
-                <img onclick="hidenSidebar()" class="header__bottom-icon-img-close"
-                    src="<?php echo $local ?>/images/icons/icon_close.webp" height="30px" width="30px" alt="..."></img>
-            </div>
+    <div style="margin: 0 auto;">
+        <div class="header">
+            <img width="30" height="30" loading="lang" src="<?php echo $local ?>/images/chuyen_de/icons/icon_menu.webp"
+                alt="...">
+            <div class="header_center">Phòng Khám <strong>Nam Khoa TP. HCM</strong></div>
+            <img width="30" height="30" loading="lazy" src="<?php echo $local ?>/images/chuyen_de/icons/icon_dot.webp"
+                alt="...">
         </div>
     </div>
     <div class="header__mobile-banner">

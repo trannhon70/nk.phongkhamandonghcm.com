@@ -85,10 +85,7 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                             <div class="article__container-right-title">
                                 <?php echo $getPostDetail['tieu_de'] ?>
                             </div>
-                            <div class="article__container-right-banner">
-                                <!-- <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
-                                <img width="100%"  src="<?php echo $local ?>/images/banner/khuyen_mai_mobile.gif" alt="...">
-                            </a> -->
+                            <!-- <div class="article__container-right-banner">
                                 <section class="cardbs">
                                     <div class="cardbs__body">
                                         <div class="cardbs__body-left">
@@ -115,7 +112,7 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                                             aria-label="title" class="box">tư vấn với bác sĩ tại đây</a>
                                     </div>
                                 </section>
-                            </div>
+                            </div> -->
 
                             <div class="article__container-right-content">
                                 <?php if (Session::get('role') === '1' || Session::get('role') === '2') { ?>
@@ -296,17 +293,33 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
 
     <script>
         const bodyPlaceholder = document.getElementById("bai-viet");
+
         const loadBody = () => {
             let content = `<?php echo htmlspecialchars_decode($getPostDetail['content']); ?>`;
-            bodyPlaceholder.innerHTML = content;
-            content = content.replace(/0968\s063\s109/g, '0968 063 109, 028 7777 9888');
-            content = content.replace(/Đa\s+Khoa/gi, 'Chuyên khoa');
-            const addressRegex = /360,\sAn\sDương\sVương,\sP\.4,\sQ\.5,\sTPHCM\./g;
-            content = content.replace(addressRegex, 'Số 360 đường An Dương Vương, Phường Chợ Quán, TP Hồ Chí Minh');
 
-            bodyPlaceholder.innerHTML = content;
+            // Gán tạm nội dung vào DOM ẩn để xử lý
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = content;
+
+            // Duyệt tất cả text node
+            const walker = document.createTreeWalker(tempDiv, NodeFilter.SHOW_TEXT, null, false);
+            while (walker.nextNode()) {
+                const node = walker.currentNode;
+
+                // Thay "Phòng Khám Nam Khoa TP. HCM" → "Chuyên Nam Khoa"
+                node.nodeValue = node.nodeValue.replace(/Chuyên\s*khoa\s*An\s*Đông/gi, 'Chuyên Khoa Nam');
+
+                // Thay địa chỉ "360, An Dương Vương, P.4, Q.5, TPHCM"
+                node.nodeValue = node.nodeValue.replace(/360,\s*An\s*Dương\s*Vương,\s*P\.?4,\s*Q\.?5,\s*TPHCM/gi,
+                    'Số 360 đường An Dương Vương, Phường Chợ Quán, TP Hồ Chí Minh');
+
+                // Thay số điện thoại
+                node.nodeValue = node.nodeValue.replace(/0968\s*063\s*109/g, '0968 063 109, 028 7777 9888');
+            }
+
+            // Gán ra DOM chính
+            bodyPlaceholder.innerHTML = tempDiv.innerHTML;
             bodyPlaceholder.classList.add("loaded");
-            observer.unobserve(bodyPlaceholder);
         };
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
