@@ -382,7 +382,7 @@ body {
     .view {
         text-align: center !important;
         width: 100% !important;
-        height: 226px !important;
+        height: 100% !important;
     }
     .view_button {
         top: 72% !important;
