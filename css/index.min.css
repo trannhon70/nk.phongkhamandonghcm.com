@@ -371,9 +371,9 @@ body {
     .article__container-right {
         width: var(--width-100) !important;
     }
-    .article__container-right-content {
+    /* .article__container-right-content {
         padding: 10px !important;
-    }
+    } */
     .glow-on-hover {
         width: 320px !important;
         height: 130px !important;
