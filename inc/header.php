@@ -50,8 +50,8 @@ header("Cache-Control: public, max-age=31536000");
 header("Cache-Control: private, no-cache");
 header('Server-Timing: db;desc="Database";dur=' . $dbReadTotalTime);
 
-// $local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
-$local = 'https://nk.phongkhamandonghcm.com';
+$local = 'http://localhost/_andong/nk.phongkhamandonghcm.com';
+// $local = 'https://nk.phongkhamandonghcm.com';
 ?>
 
 <!DOCTYPE html>

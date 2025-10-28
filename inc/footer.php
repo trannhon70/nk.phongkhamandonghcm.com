@@ -1,8 +1,11 @@
 <footer class="footer" id="footer">
     <div class="footer__container">
         <div class="footer__container-left">
-            <amp-img class="footer__container-left-img" src="<?php echo $local ?>/images/logos/logo_footer.webp"
-                height="100px" width="300px" alt="..."></amp-img>
+            <!-- <amp-img class="footer__container-left-img" src="<?php echo $local ?>/images/logos/logo_footer.webp"
+                height="100px" width="300px" alt="..."></amp-img> -->
+            <div style="font-size: 25px; font-weight: 700; color: white; margin: 10px 0px; ">
+                PHÒNG KHÁM NAM KHOA TP. HCM
+            </div>
             <hr>
             <div class="footer__container-left-body">
                 <ul class="footer__container-left-body-ul">
@@ -121,8 +124,11 @@
     </div>
     <div class="footer__mobile-bottom">
         <div class="footer__mobile-bottom-title">
-            <amp-img class="footer__mobile-bottom-img" src="<?php echo $local ?>/images/logos/logo_footer.webp"
-                height="100px" width="300px" alt="..."></amp-img>
+            <!-- <amp-img class="footer__mobile-bottom-img" src="<?php echo $local ?>/images/logos/logo_footer.webp"
+                height="100px" width="300px" alt="..."></amp-img> -->
+            <div style="font-size: 20px; font-weight: bold; color: white; margin: 10px 0px; ">
+                PHÒNG KHÁM NAM KHOA TP. HCM
+            </div>
             <hr>
         </div>
 

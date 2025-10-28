@@ -18,9 +18,10 @@ $DSBenh = $benh->getDSBenhThuocKhoaTTYK();
     </div>
     <div class="header__bottom">
         <div class="header__bottom-logo">
-            <a href="<?php echo $local ?>/trang-chu.html">
-                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/logos/logo.webp"
-                    height="100px" width="285px" alt="..."></amp-img>
+            <a style="display: flex; align-items: center; justify-content: center;"
+                href="<?php echo $local ?>/trang-chu.html">
+                <amp-img class="header__bottom-logo-img" src="<?php echo $local ?>/images/icons/icon_logo.webp"
+                    height="100px" width="150px" alt="..."></amp-img>
             </a>
         </div>
         <ul class="header__bottom-ul">
