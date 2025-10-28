@@ -82,8 +82,7 @@ $DSBenh = $benh->getDSBenhThuocKhoaTTYK();
 <header class="header__mobile" id="header_mobile">
     <div style="margin: 0 auto;">
         <div class="header">
-            <img width="30" height="30" loading="lang" src="<?php echo $local ?>/images/chuyen_de/icons/icon_menu.webp"
-                alt="...">
+            <?php include "layout/sider_bar.php" ?>
             <div class="header_center">Phòng Khám <strong>Nam Khoa TP. HCM</strong></div>
             <img width="30" height="30" loading="lazy" src="<?php echo $local ?>/images/chuyen_de/icons/icon_dot.webp"
                 alt="...">
