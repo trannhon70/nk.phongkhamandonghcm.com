@@ -469,7 +469,7 @@
 }
 
 .article__container-right-title {
-    background: linear-gradient(90deg, #13b084 50.5%, #007156 100%);
+    background: linear-gradient(90deg, #345dd8 50.5%, #284bb6 100%);
     font-size: var(--font-size-18);
     color: var(--color-white);
     font-weight: var(--font-weight-700);
