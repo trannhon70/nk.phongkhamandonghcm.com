@@ -70,192 +70,192 @@ $local = 'https://nk.phongkhamandonghcm.com';
 
 
     <style amp-boilerplate>
-    body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
-
-    @-webkit-keyframes -amp-start {
-        from {
-            visibility: hidden
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
         }
 
-        to {
-            visibility: visible
-        }
-    }
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
 
-    @-moz-keyframes -amp-start {
-        from {
-            visibility: hidden
-        }
-
-        to {
-            visibility: visible
-        }
-    }
-
-    @-ms-keyframes -amp-start {
-        from {
-            visibility: hidden
+            to {
+                visibility: visible
+            }
         }
 
-        to {
-            visibility: visible
-        }
-    }
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
 
-    @-o-keyframes -amp-start {
-        from {
-            visibility: hidden
-        }
-
-        to {
-            visibility: visible
-        }
-    }
-
-    @keyframes -amp-start {
-        from {
-            visibility: hidden
+            to {
+                visibility: visible
+            }
         }
 
-        to {
-            visibility: visible
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
         }
-    }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
     </style>
     <noscript>
         <style amp-boilerplate>
-        body {
-            -webkit-animation: none;
-            -moz-animation: none;
-            -ms-animation: none;
-            animation: none
-        }
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none
+            }
         </style>
         <link rel="stylesheet" href="<?php echo $local ?>/css/index.min.css">
         <link rel="stylesheet" href="<?php echo $local ?>/css/toastr.min.css">
     </noscript>
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        function updateHeaderStylesheet() {
-            // Xóa các stylesheet cũ nếu có
-            const existingMobile = document.querySelectorAll('link[id^="mobile-"]');
-            const existingDesktop = document.querySelectorAll('link[id^="desktop-"]');
-            existingMobile.forEach(mobile => mobile.remove());
-            existingDesktop.forEach(desktop => desktop.remove());
+        document.addEventListener('DOMContentLoaded', () => {
+            function updateHeaderStylesheet() {
+                // Xóa các stylesheet cũ nếu có
+                const existingMobile = document.querySelectorAll('link[id^="mobile-"]');
+                const existingDesktop = document.querySelectorAll('link[id^="desktop-"]');
+                existingMobile.forEach(mobile => mobile.remove());
+                existingDesktop.forEach(desktop => desktop.remove());
 
-            // Thêm stylesheet mới dựa trên kích thước cửa sổ
-            if (window.innerWidth < 1000) {
-                const mobileLink = [{
-                        href: 'css/header_mobile.min.css',
-                        id: 'mobile-0'
-                    },
-                    {
-                        href: 'css/foooter_mobile.min.css',
-                        id: 'mobile-1'
-                    },
+                // Thêm stylesheet mới dựa trên kích thước cửa sổ
+                if (window.innerWidth < 1000) {
+                    const mobileLink = [{
+                            href: 'css/header_mobile.min.css',
+                            id: 'mobile-0'
+                        },
+                        {
+                            href: 'css/foooter_mobile.min.css',
+                            id: 'mobile-1'
+                        },
 
-                ];
-                mobileLink.forEach(({
-                    href,
-                    id
-                }) => {
-                    const link = document.createElement('link');
-                    link.rel = 'stylesheet';
-                    link.href = href;
-                    link.id = id;
-                    document.head.appendChild(link);
-                });
+                    ];
+                    mobileLink.forEach(({
+                        href,
+                        id
+                    }) => {
+                        const link = document.createElement('link');
+                        link.rel = 'stylesheet';
+                        link.href = href;
+                        link.id = id;
+                        document.head.appendChild(link);
+                    });
 
-            } else {
-                const desktopLink = [{
-                        href: 'css/header.min.css',
-                        id: 'desktop-0'
-                    },
-                    {
-                        href: 'css/slider.min.css',
-                        id: 'desktop-1'
-                    },
-                    {
-                        href: 'css/footerPC.min.css',
-                        id: 'desktop-2'
-                    },
+                } else {
+                    const desktopLink = [{
+                            href: 'css/header.min.css',
+                            id: 'desktop-0'
+                        },
+                        {
+                            href: 'css/slider.min.css',
+                            id: 'desktop-1'
+                        },
+                        {
+                            href: 'css/footerPC.min.css',
+                            id: 'desktop-2'
+                        },
 
-                ];
-                desktopLink.forEach(({
-                    href,
-                    id
-                }) => {
-                    const link = document.createElement('link');
-                    link.rel = 'stylesheet';
-                    link.href = href;
-                    link.id = id;
-                    document.head.appendChild(link);
-                });
+                    ];
+                    desktopLink.forEach(({
+                        href,
+                        id
+                    }) => {
+                        const link = document.createElement('link');
+                        link.rel = 'stylesheet';
+                        link.href = href;
+                        link.id = id;
+                        document.head.appendChild(link);
+                    });
+                }
             }
-        }
 
-        updateHeaderStylesheet();
-
-
-
-
-        window.addEventListener('resize', () => {
-            console.log('Window resized to:', window.innerWidth);
             updateHeaderStylesheet();
 
+
+
+
+            window.addEventListener('resize', () => {
+                console.log('Window resized to:', window.innerWidth);
+                updateHeaderStylesheet();
+
+            });
         });
-    });
     </script>
 
     <!-- Google tag (gtag.js) -->
     <script>
-    // Chỉ tải Google Analytics khi người dùng cuộn xuống
-    document.addEventListener('scroll', function loadGA() {
-        console.log('Người dùng cuộn xuống - Tải Google Analytics');
+        // Chỉ tải Google Analytics khi người dùng cuộn xuống
+        document.addEventListener('scroll', function loadGA() {
+            console.log('Người dùng cuộn xuống - Tải Google Analytics');
 
-        // Tạo thẻ script
-        var g = document.createElement('script'),
-            s = document.scripts[0];
-        g.src = 'https://www.googletagmanager.com/gtag/js?id=G-M8KPG8P2YN';
-        g.async = true;
-        s.parentNode.insertBefore(g, s);
+            // Tạo thẻ script
+            var g = document.createElement('script'),
+                s = document.scripts[0];
+            g.src = 'https://www.googletagmanager.com/gtag/js?id=G-M8KPG8P2YN';
+            g.async = true;
+            s.parentNode.insertBefore(g, s);
 
-        // Cấu hình gtag
-        g.onload = function() {
-            window.dataLayer = window.dataLayer || [];
+            // Cấu hình gtag
+            g.onload = function() {
+                window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', 'G-M8KPG8P2YN');
-        };
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', 'G-M8KPG8P2YN');
+            };
 
-        // Xóa sự kiện lắng nghe để không tải lại
-        document.removeEventListener('scroll', loadGA);
-    });
+            // Xóa sự kiện lắng nghe để không tải lại
+            document.removeEventListener('scroll', loadGA);
+        });
     </script>
 
     <!-- Google Tag Manager -->
     <script defer>
-    (function(w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(),
-            event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s),
-            dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PX2JGH6D');
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PX2JGH6D');
     </script>
     <!-- End Google Tag Manager -->
