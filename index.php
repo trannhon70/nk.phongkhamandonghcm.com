@@ -74,7 +74,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
     </header>
     <main>
         <section style="margin-top: 50px;">
-            <a aria-label="liên hệ" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+            <a aria-label="liên hệ" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                 <img style="width: 100%; height: auto;" loading="lazy"
                     src="<?php echo $local ?>/images/chuyen_de/users/banner.webp" alt="...">
             </a>
@@ -85,7 +85,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
         </section>
         <section class="section__button">
             <a aria-label="liên hệ" class="animated-button"
-                href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -182,7 +182,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
                 </div>
             </div>
         </section>
-        <a aria-label="liên hệ" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+        <a aria-label="liên hệ" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"
             style="margin-top: 10px; display: block;">
             <img style="width: 100%; height: auto;" loading="lazy"
                 src="<?php echo $local ?>/images/chuyen_de/users/banner_1.webp" alt="...">
@@ -237,7 +237,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
         </section>
         <section class="section__button">
             <a aria-label="liên hệ" class="animated-button"
-                href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+                href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -286,7 +286,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
                 (Cả cuối tuần và lễ)
             </div>
             <div class="note_1">
-                <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="note_1_button">Đặt lịch
+                <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;" class="note_1_button">Đặt lịch
                     tư vấn 24/7</a>
             </div>
             <div class="note_1">
@@ -333,7 +333,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
                 src="<?php echo $local ?>/images/chuyen_de/users/footer_mobile.gif" alt="...">
             <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; display: flex;">
                 <a style="display: block; width: 50%; ; height: 60px;"
-                    href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+                    href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
                 <a style="display: block; width: 50%; ; height: 60px;" href="tel:0968063109"></a>
             </div>
         </div>

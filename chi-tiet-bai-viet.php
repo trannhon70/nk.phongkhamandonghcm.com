@@ -73,7 +73,7 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                 <div class="article__container">
                     <div class="article__container-left">
                         <div class="article__container-left-div">
-                            <!-- <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"  >
+                            <!-- <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"  >
                             <img class="article__container-left-img" src="<?php echo $local ?>/images/banner/khuyen_mai.webp" height="auto" width="100%" alt="..."></img>
                             </a> -->
 
@@ -108,7 +108,7 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                                 </section>
                                 <section class="banner">
                                     <div class="banner__button">
-                                        <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"
+                                        <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"
                                             aria-label="title" class="box">tư vấn với bác sĩ tại đây</a>
                                     </div>
                                 </section>
@@ -130,7 +130,7 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                                 một số nội dung có thể không thuộc nghiệp vụ của phòng khám chúng tôi, Hiệu quả của việc hỗ
                                 trợ
                                 điều trị phụ thuộc vào cơ địa của mỗi người. Cần biết thông tin liên hệ để được tư vấn trực
-                                tuyến miễn phí.<a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">[TƯ
+                                tuyến miễn phí.<a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">[TƯ
                                     VẤN TRỰC TUYẾN]</a>
                             </div>
                         <?php } ?>
@@ -202,8 +202,10 @@ if (isset($getPostDetail["hiden"]) && $getPostDetail["hiden"] === "1") {
                         true) {
                         imgElements[i].style.borderRadius = '8px';
                         let divWrapper = document.createElement('a');
-                        divWrapper.href = "https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en";
-
+                        divWrapper.href = "javascript:void(0)";
+                        divWrapper.addEventListener("click", function() {
+                            openZoosUrl('chatwin');
+                        });
                         divWrapper.className = 'glow-on-hover';
                         imgElements[i].parentNode.insertBefore(divWrapper, imgElements[i]);
                         divWrapper.appendChild(imgElements[i])

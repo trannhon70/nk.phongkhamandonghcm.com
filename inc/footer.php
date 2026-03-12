@@ -159,10 +159,10 @@
                     <a href="<?php echo $local ?>">tin tức</a>
                 </li>
                 <li class="footer__container-left-body-ul-li footer__container-left-hover">
-                    <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">tư vấn trực tuyến</a>
+                    <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">tư vấn trực tuyến</a>
                 </li>
                 <li class="footer__container-left-body-ul-li footer__container-left-hover">
-                    <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">đặt lịch khám</a>
+                    <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">đặt lịch khám</a>
                 </li>
             </ul>
             <div class="footer__container-left-body-div">
@@ -205,7 +205,7 @@
                 src="<?php echo $local ?>/images/chuyen_de/users/footer_mobile.gif" alt="...">
             <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; display: flex;">
                 <a style="display: block; width: 50%; ; height: 60px;"
-                    href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en"></a>
+                    href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
                 <a style="display: block; width: 50%; ; height: 60px;" href="tel:0968063109"></a>
             </div>
         </div>
@@ -219,13 +219,13 @@
         </div>
     </div> -->
     <div style="z-index: 1000;">
-        <a class="footer_icon_happy" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        <a class="footer_icon_happy" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
             <img loading="lazy" src="<?php echo $local ?>/images/icons/icon_zalo.webp" height="50px" width="50px"
                 alt="..."></img>
         </a>
     </div>
     <div style="margin-top:20px">
-        <a class="footer_icon_mess" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        <a class="footer_icon_mess" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
             <amp-img style="margin-left:3px" src="<?php echo $local ?>/images/icons/icon_message.webp" height="45px"
                 width="45px" alt="..."></amp-img>
             <div class="ping"></div>

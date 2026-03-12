@@ -81,7 +81,7 @@
 
         <div style="position: relative;">
             <span class="closeKM" id="closeModalKM">&times;</span>
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+            <a href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                 <img style="border: 1px solid success; border-radius: 8px; " width="100%" height="auto"
                     src="<?php echo $local ?>/images/users/bac_si_tu_xa.webp" alt="...">
             </a>

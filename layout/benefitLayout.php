@@ -71,7 +71,7 @@
         </div>
     </div>
     <div class="benefit__button">
-        <a class="benefit__button-a" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        <a class="benefit__button-a" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
             ĐẶT HẸN NGAY
         </a>
     </div>
@@ -148,7 +148,7 @@
         </div>
     </div>
     <div class="benefit__button">
-        <a class="benefit__button-a" href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+        <a class="benefit__button-a" href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
             ĐẶT HẸN NGAY
         </a>
     </div>
