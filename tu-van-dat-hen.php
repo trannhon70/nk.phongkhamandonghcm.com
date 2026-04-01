@@ -160,7 +160,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
                         <option value="14:00 - 16:00">14:00 - 16:00</option>
                         <option value="16:00 - 18:00">16:00 - 18:00</option>
                     </select>
-                    <input id="ngaykham" type="date" placeholder="dd/mm/yyyy">
+                    <input id="ngaykham" type="date" placeholder="yyyy-mm-dd">
                 </div>
             </div>
             <div id="submitBtn" class="section_2_button">
@@ -233,6 +233,16 @@ $local = 'https://nk.phongkhamandonghcm.com';
             // alert("Không thể kết nối server!");
         }
     });
+    const today = new Date();
+
+    // format yyyy-mm-dd
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+
+    const formatted = `${yyyy}-${mm}-${dd}`;
+
+    document.getElementById('ngaykham').value = formatted;
 </script>
 
 </html>
