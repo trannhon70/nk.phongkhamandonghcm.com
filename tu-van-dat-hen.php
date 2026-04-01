@@ -160,7 +160,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
                         <option value="14:00 - 16:00">14:00 - 16:00</option>
                         <option value="16:00 - 18:00">16:00 - 18:00</option>
                     </select>
-                    <input id="ngaykham" type="date" placeholder="Thứ Hai, 6/4">
+                    <input id="ngaykham" type="date" placeholder="dd/mm/yyyy">
                 </div>
             </div>
             <div id="submitBtn" class="section_2_button">
