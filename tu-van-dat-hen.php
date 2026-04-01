@@ -135,7 +135,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
             </div>
         </div>
         <section class="section_1">
-            <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en">
+            <a href="#" id="focusHotenBtn">
                 <img style="width: 100%; height: 100%;" loading="lazy" src="<?php echo $local ?>/images/tu_van/popup.webp" alt="...">
             </a>
         </section>
@@ -188,6 +188,10 @@ $local = 'https://nk.phongkhamandonghcm.com';
 </body>
 <script defer language="javascript" src="<?php echo $local ?>/js/carousel.min.js"></script>
 <script>
+    document.getElementById('focusHotenBtn').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('hoten').focus();
+    });
     document.getElementById("submitBtn").addEventListener("click", async () => {
         const hoten = document.getElementById("hoten").value.trim();
         const phone = document.getElementById("phone").value.trim();
