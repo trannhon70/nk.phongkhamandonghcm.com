@@ -159,6 +159,18 @@ h1 {
     height: 40px;
     width: 100%;
     outline: none;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 15px;
+    border-color: #cfecff;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+.section_2_body_time > select {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
     padding: 0px 10px;
     border-radius: 15px;
     border-color: #cfecff;
@@ -175,6 +187,7 @@ h1 {
     height: 40px;
     width: 100%;
     outline: none;
+    border: none;
     padding: 0px 10px;
     border-radius: 15px;
     border-color: #cfecff;
@@ -186,6 +199,11 @@ h1 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+option {
+    background: white;
+    color: black;
 }
 
 footer {

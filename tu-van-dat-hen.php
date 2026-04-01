@@ -139,7 +139,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
                 <img style="width: 100%; height: 100%;" loading="lazy" src="<?php echo $local ?>/images/tu_van/popup.webp" alt="...">
             </a>
         </section>
-        <section id="formDatLich" class="section_2">
+        <form id="formDatLich" class="section_2">
             <div class="section_2_body">
                 <div class="section_2_body_label">Họ và Tên</div>
                 <input id="hoten" type="text" placeholder="Ví dụ: Nguyễn Văn A">
@@ -153,7 +153,13 @@ $local = 'https://nk.phongkhamandonghcm.com';
                     Chọn Khung Giờ Khám
                 </div>
                 <div class="section_2_body_time">
-                    <input id="giokham" type="time" placeholder="00:00">
+                    <select name="" id="giokham">
+                        <option value="8:00">8:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="16:00">16:00</option>
+                    </select>
                     <input id="ngaykham" type="date" placeholder="Thứ Hai, 6/4">
                 </div>
             </div>
@@ -166,7 +172,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
             <a href="https://npa.zoosnet.net/LR/Chatpre.aspx?id=NPA46777247&lng=en" class="section_2_button">
                 <img style="width: 80%; height: 100%;" loading="lazy" src="<?php echo $local ?>/images/tu_van/CTA-off.webp" alt="...">
             </a>
-        </section>
+        </form>
     </main>
     <footer>
         <div class="footer_title">PHÒNG KHÁM NAM KHOA TP.HCM</div>
@@ -220,7 +226,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
 
         } catch (error) {
             console.error(error);
-            alert("Không thể kết nối server!");
+            // alert("Không thể kết nối server!");
         }
     });
 </script>
