@@ -194,6 +194,22 @@ h1 {
     box-sizing: border-box;
     margin-top: 5px;
 }
+.section_2_body_time > select,
+.section_2_body_time > input {
+    flex: 1; /* chia đều 50/50 */
+    min-width: 0; /* fix lỗi overflow trên iOS */
+}
+.section_2_body_time > select {
+    background-color: #fff;
+    -webkit-appearance: none; /* bắt buộc cho iOS */
+    appearance: none;
+}
+input[type="date"] {
+    background-color: #fff;
+    -webkit-appearance: none; /* cực kỳ quan trọng */
+    appearance: none;
+}
+
 .section_2_button {
     display: flex;
     align-items: center;
