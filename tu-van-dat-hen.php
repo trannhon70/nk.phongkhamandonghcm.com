@@ -154,11 +154,11 @@ $local = 'https://nk.phongkhamandonghcm.com';
                 </div>
                 <div class="section_2_body_time">
                     <select name="" id="giokham">
-                        <option value="8:00">8:00</option>
-                        <option value="10:00">10:00</option>
-                        <option value="12:00">12:00</option>
-                        <option value="14:00">14:00</option>
-                        <option value="16:00">16:00</option>
+                        <option value="8:00 - 10:00">8:00 - 10:00</option>
+                        <option value="10:00 - 12:00">10:00 - 12:00</option>
+                        <option value="12:00 - 14:00">12:00 - 14:00</option>
+                        <option value="14:00 - 16:00">14:00 - 16:00</option>
+                        <option value="16:00 - 18:00">16:00 - 18:00</option>
                     </select>
                     <input id="ngaykham" type="date" placeholder="Thứ Hai, 6/4">
                 </div>
