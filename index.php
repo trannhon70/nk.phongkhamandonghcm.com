@@ -327,7 +327,7 @@ $local = 'https://nk.phongkhamandonghcm.com';
     <div class="footer_fixed">
         <div style="position: relative; height: 100px; ">
             <img width="100%" height="100px" src="<?php echo $local ?>/images/chuyen_de/users/footer_mobile.gif" alt="...">
-            <div style="width: 100%; height: 100px; position: absolute; top: 0; left: 0; ">
+            <div style="width: 100%; height: 100px; position: absolute; top: 0; left: 0; display: flex; ">
                 <a aria-label="Tư vấn" style="width: 30%; height: 100px; display: block; " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
                 </a>
                 <a aria-label="phone" style="width: 40%; height: 100px; display: block; " href="tel:0968063109"></a>
