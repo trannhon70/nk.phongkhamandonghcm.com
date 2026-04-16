@@ -325,16 +325,13 @@ $local = 'https://nk.phongkhamandonghcm.com';
         </a>
     </footer>
     <div class="footer_fixed">
-        <div style="position: relative;">
-            <img style="position: absolute; top: 3px; right: 40%;" loading="lazy" width="50px" height="auto"
-                src="<?php echo $local ?>/images/icons/icon_footer_animation.gif" alt="..." layout="responsive">
-            </img>
-            <img style="width: 100%; height: auto;" loading="lazy"
-                src="<?php echo $local ?>/images/chuyen_de/users/footer_mobile.gif" alt="...">
-            <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 60px; display: flex;">
-                <a style="display: block; width: 50%; ; height: 60px;"
-                    href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
-                <a style="display: block; width: 50%; ; height: 60px;" href="tel:0968063109"></a>
+        <div style="position: relative; height: 100px; ">
+            <img width="100%" height="100px" src="<?php echo $local ?>/images/chuyen_de/users/footer_mobile.gif" alt="...">
+            <div class="footer_mobile_a">
+                <a aria-label="Tư vấn" style="width: 30%; height: 100px; display: block; " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;">
+                </a>
+                <a aria-label="phone" style="width: 40%; height: 100px; display: block; " href="tel:0968063109"></a>
+                <a aria-label="Đăt hẹn" style="width: 30%; height: 100px; display: block; " href="javascript:void(0)" onclick="openZoosUrl('chatwin'); return false;"></a>
             </div>
         </div>
     </div>
